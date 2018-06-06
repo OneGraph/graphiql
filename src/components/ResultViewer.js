@@ -41,10 +41,10 @@ export class ResultViewer extends React.Component {
     require('codemirror/addon/search/searchcursor');
     require('codemirror/addon/search/jump-to-line');
     require('codemirror/keymap/sublime');
-    require('codemirror-graphql/results/mode');
+    require('@onegraph/codemirror-graphql/results/mode');
 
     if (this.props.ResultsTooltip) {
-      require('codemirror-graphql/utils/info-addon');
+      require('@onegraph/codemirror-graphql/utils/info-addon');
       const tooltipDiv = document.createElement('div');
       CodeMirror.registerHelper(
         'info',
