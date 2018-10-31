@@ -49,6 +49,7 @@ export default class HistoryQuery extends React.Component {
     const starIcon = this.props.favorite ? '\u2605' : '\u2606';
     return (
       <p
+        title={this.props.query}
         className={this.state.editable && 'editable'}
         onClick={this.handleClick.bind(this)}
         onMouseEnter={this.handleMouseEnter.bind(this)}
